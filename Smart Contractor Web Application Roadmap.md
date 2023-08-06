@@ -1,9 +1,8 @@
-___
 # Product Requirements
-- [[#Step 1 Login via Facebook/Google|Login via Facebook/Google]]
+- Step 1 Login via Facebook/Google|Login via Facebook/Google
 - User can add Display Picture & Phone number.
 - User can add services.
-- [[#Step 2 User sees thier contacts|User can view from contacts, who is registered on this application, and can view profiles.]]
+- Step 2 User sees thier contacts|User can view from contacts, who is registered on this application, and can view profiles.
 - User’s locations should be taken. 
 - Show the list of skillful users nearest (under 10km) to him
 - User can search the required service by categories, location or contacts.
@@ -15,12 +14,10 @@ ___
 - Admin can add categories.
 - Admin can chat/warn to any user.
 - Admin can see/filter the weekly, monthly & yearly hirings graphs on dashboard.
-___
 # Functionality Already Implemented
 - Login via email/password
 - User can add Display Picture & Phone number.
 - User can add services.
-___
 # Functionality `To` Implement **(In Stepwise Order)**
 ##  Step 0:
 Currently the user table has only id, email and password. To accomodate the rich user personal details required for this project the schema has to be altered as so.  
