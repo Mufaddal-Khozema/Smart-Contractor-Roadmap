@@ -3,7 +3,7 @@
 - User can add Display Picture & Phone number.
 - User can add services.
 - [User can view from contacts, who is registered on this application, and can view profiles.](#step-2-user-sees-thier-contacts)
-- User’s locations should be taken. 
+- [User’s locations should be taken. ](#step-3-users-locations-should-be-taken.)
 - Show the list of skillful users nearest (under 10km) to him
 - User can search the required service by categories, location or contacts.
 - User can send offer to a person any rate, another user can accept/reject the offer. They can chat with each other.
@@ -47,5 +47,5 @@ Currently the user table has only id, email and password. To accomodate the rich
 ## Step 2: User sees thier contacts 
 1. Gain access to users contact information
 2. Notify the user about contact that use the service. Give them an option to add them as friends.
-##
+## Step 3: User’s locations should be taken. 
 
