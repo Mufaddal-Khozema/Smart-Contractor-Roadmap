@@ -1,5 +1,5 @@
 # Product Requirements
-- (Login via Facebook/Google)[#Step 1 Login via Facebook/Google]
+- [Login via Facebook/Google](#Step 1 Login via Facebook/Google)
 - User can add Display Picture & Phone number.
 - User can add services.
 - Step 2 User sees thier contacts|User can view from contacts, who is registered on this application, and can view profiles.
