@@ -2,7 +2,7 @@
 - [Login via Facebook/Google](#step-1-login-via-facebookgoogle)
 - User can add Display Picture & Phone number.
 - User can add services.
-- Step 2 User sees thier contacts|User can view from contacts, who is registered on this application, and can view profiles.
+- [User can view from contacts, who is registered on this application, and can view profiles.](#step-2-user-sees-thier-contacts)
 - User’s locations should be taken. 
 - Show the list of skillful users nearest (under 10km) to him
 - User can search the required service by categories, location or contacts.
