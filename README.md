@@ -6,7 +6,7 @@
 - [User’s locations should be taken. ](#step-3-users-locations-should-be-taken)
 - [Show the list of skillful users nearest (under 10km) to him](#step-4-show-the-list-of-skillful-users-nearest-under-10km-to-him)
 - [User can search the required service by categories, location or contacts.](#step-5-user-can-search-the-required-service-by-categories-location-or-contacts)
-- User can send offer to a person any rate, another user can accept/reject the offer. They can chat with each other.
+- [User can send offer to a person any rate, another user can accept/reject the offer. They can chat with each other.](#step-6-user-can-send-offer-to-a-person-any-rate-another-user-can-acceptreject-the-offer-they-can-chat-with-each-other)
 - Upon hiring, both users will see their live locations on map, the best routes from source to destiny.
 - User canwrite a review for a service and can rate by using five star ratings & end the contract
 - Admin can login via specific credentials.
@@ -60,4 +60,9 @@ Currently the user table has only id, email and password. To accomodate the rich
 2. Searching [location](#step-4-show-the-list-of-skillful-users-nearest-under-10km-to-him) will depend on the location enable. The search results will be ordered in proximity to the user
 3. Categories here is understood as the types of trade a service provider provides. The search result with those trades will be shown at the top.
 4. Contact here is understood as both the contacts on thier mobile phone and the friends they have added/service provider that they are have had any interaction with. The service providers fitting the aforementioned criterion will be shown in the search result first.
-## Step 6: 
+## Step 6: User can send offer to a person any rate, another user can accept/reject the offer. They can chat with each other.
+1. This feactures rests in the center of many of the core feature of the application. I will discuss those feature here with varying levels of details.
+2. Service providers: They are users that have opt in to be service providers. They can have a description and display thier various services. They will also be accompanied by [rating].
+3. User chatting: User has the option to contact a service provider if they so choose. To enable this chatting there will be a chats view where a person will see all the users that they have engaged in chats with. 
+4. Offer sending: An offer is proposition that a user can approach in two ways. A Service provider will have an option on thier profile 'send an offer'. The second way is in chatting where the same option will be available and can be utilised by the user anytime. The offer will look something like, where an they will be given an offer page where the user will provide a **'title'** (to describe what they want), **'service/s'** (This will be the type of service or services the user needs from the service provider), **'explanation'** (Here the user can go more into detail in what they need from the services provider), **'expected timeline'** (The user can provide the time they expect the project) and **'price'** (The price at which they wish to comission the project).
+5. A Service provider after recieving an offer has the option to accept/renegotiate/reject the offer all will be (optionally) accomanied by a message by the Service provider.
