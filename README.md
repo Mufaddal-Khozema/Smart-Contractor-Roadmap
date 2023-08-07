@@ -1,74 +1,77 @@
-# Product Requirements
-- [Login via Facebook/Google](#step-1-login-via-facebookgoogle)
-- User can add Display Picture & Phone number.
-- User can add services.
-- [User can view from contacts, who is registered on this application, and can view profiles.](#step-2-user-sees-thier-contacts)
-- [User’s locations should be taken. ](#step-3-users-locations-should-be-taken)
-- [Show the list of skillful users nearest (under 10km) to him](#step-4-show-the-list-of-skillful-users-nearest-under-10km-to-him)
-- [User can search the required service by categories, location or contacts.](#step-5-user-can-search-the-required-service-by-categories-location-or-contacts)
-- [User can send offer to a person any rate, another user can accept/reject the offer. They can chat with each other.](#step-6-user-can-send-offer-to-a-person-any-rate-another-user-can-acceptreject-the-offer-they-can-chat-with-each-other)
-- [Upon hiring, both users will see their live locations on map, the best routes from source to destiny.](#step-7-upon-hiring-both-users-will-see-their-live-locations-on-map-the-best-routes-from-source-to-destiny)
-- [User canwrite a review for a service and can rate by using five star ratings & end the contract](#step-8-user-canwrite-a-review-for-a-service-and-can-rate-by-using-five-star-ratings-end-the-contract)
-- Admin can login via specific credentials.
-- Admin can view/block/delete the users.
-- Admin can add categories.
-- Admin can chat/warn to any user.
-- Admin can see/filter the weekly, monthly & yearly hirings graphs on dashboard.
-# Functionality Already Implemented
-- Login via email/password
-- User can add Display Picture & Phone number.
-- User can add services.
-# Functionality `To` Implement **(In Stepwise Order)**
-##  Step 0:
-Currently the user table has only id, email and password. To accomodate the rich user personal details required for this project the schema has to be altered as so.  
-```
-// Users Table
-{
-    "first_name": "name",
-    "last_name": "last",
-    "email":"namelast@gmail.com",
-    "mobile": 1234567890,
-    "street_address": "Abc Steet, Loop Rd, Pqr Town",
-    "city": "Lahore",
-    "province": "Punjab",
-    "zip_code": 05499,
-    "trade": "Canpenter",
-    "skill": "Apprentice 1",
-    "looking_to_worki_in": "Karachi",
-    "password":"&^&^@*@($JBSJJBV@sjwb3*",
-    "profile_photo": "/uploads/namelast.png",
-    "location": "",
-}
-```
-## Step 1: Login via Facebook/Google
-1. Use the Facebook and Google PHP SDK to allow user to signup/login with thier Google/Facebook account
-2. Retireve details about the user from the platform they are trying to sign up with
-3. Resurface the form but now filled with some details for their social sign in accounts
-4. Make the user.
-## Step 2: User sees thier contacts 
-1. Gain access to users contact information
-2. Notify the user about contact that use the service. Give them an option to add them as friends.
-## Step 3: User’s locations should be taken. 
-1. Prompt the user to provide the website with thier location.
-2. The location should be saved in the database under the Users table.
-3. Use the location to query location [features.](#step-4-show-the-list-of-skillful-users-nearest-under-10km-to-him)
-## Step 4: Show the list of skillful users nearest (under 10km) to him
-1. If the user doesn't have location enable ask agian for thier permission for location accesss.
-2. Query the databse to filter the service providers nearest to the user.
-## Step 5: User can search the required service by categories, location or contacts.
-1. Search will have an addition button for filtering search results.
-2. Searching [location](#step-4-show-the-list-of-skillful-users-nearest-under-10km-to-him) will depend on the location enable. The search results will be ordered in proximity to the user
-3. Categories here is understood as the types of trade a service provider provides. The search result with those trades will be shown at the top.
-4. Contact here is understood as both the contacts on thier mobile phone and the friends they have added/service provider that they are have had any interaction with. The service providers fitting the aforementioned criterion will be shown in the search result first.
-## Step 6: User can send offer to a person any rate, another user can accept/reject the offer. They can chat with each other.
-1. This feactures rests in the center of many of the core feature of the application. I will discuss those feature here with varying levels of details.
-2. Service providers: They are users that have opt in to be service providers. They can have a description and display thier various services. They will also be accompanied by [rating].
-3. User chatting: User has the option to contact a service provider if they so choose. To enable this chatting there will be a chats view where a person will see all the users that they have engaged in chats with. 
-4. Offer sending: An offer is proposition that a user can approach in two ways. A Service provider will have an option on thier profile 'send an offer'. The second way is in chatting where the same option will be available and can be utilised by the user anytime. The offer will look something like, where an they will be given an offer page where the user will provide a **'title'** (to describe what they want), **'service/s'** (This will be the type of service or services the user needs from the service provider), **'explanation'** (Here the user can go more into detail in what they need from the services provider), **'expected timeline'** (The user can provide the time they expect the project) and **'price'** (The price at which they wish to comission the project).
-5. Offer response: A Service provider after recieving an offer has the option to accept/renegotiate/reject the offer all will be (optionally) accomanied by a message by the Service provider. Only the accept option will trigger a job.
-6. Scheduling a job: After the job has been decided. The user can go to the my jobs page to schedule a job or request the job right now. [job](#step-7-upon-hiring-both-users-will-see-their-live-locations-on-map-the-best-routes-from-source-to-destiny).
-## Step 7: Upon hiring, both users will see their live locations on map, the best routes from source to destiny.
-1. Jobs page: a user and Service Provider will have a my jobs page that will include all the jobs they are currently engaged in and all all thier past jobs.
-2. Job event: when a job is triggered there will be a waiting menu for the Service Provider to opt in and an option to send a message.  After the service provider opts in, both will see each others adress and the best routes for each other to meet.
-## Step 8: User canwrite a review for a service and can rate by using five star ratings & end the contract.
-1. After a job event is successfully over and the user will have a option on the [job page](#step-7-upon-hiring-both-users-will-see-their-live-locations-on-map-the-best-routes-from-source-to-destiny) to write them a review.
+1. Add OAuth to signup
+2. Add OAuth to login
+3. After login ask user for location and access to contacts.
+4. Make user dashboard.
+5. Query contact numbers again database. If any then notify new user.
+6. Make notification menu modal.
+7. Make notification table.
+8. Make notification modal
+9. Notifiy user for all contacts on the website.
+10. Redirect user to the personal details page
+11. Make personal detail page, a form with all personal details.
+12. Validate 'personal details form' on client and server.
+13. Add personal details to user table.
+14. Make side bar.
+15. Make side bar option to become a 'service provider'.
+16. Make a new page for 'become a service provider'.
+17. Make a form to become a service provider.
+18. Validate the 'become a service provider form' on client and server.
+19. Make a service provider table with info from 'become a service provider form'
+20. Add the user id in service provider table.
+21. Make a homepage.
+22. Make a service provider box and info about the service provider.
+23. Display some number of service providers on the homepage.
+24. Clicking on a service provider will open a detailed service provider page.
+25. Auto generate a route for the service provider.
+26. Make detailed service provider page.
+27. Make review modal.
+28. Link the review giver's page to the review modal.
+29. Add reviews to the service provider page.
+30. Make reviews table.
+31. Add pagination to the reviews.
+32. Add Search functionality to seach bar on homepage.
+33. Add location filter.
+34. Add categories filter.
+35. Add contact filter.
+36. Add chat button to service provider modal.
+37. Add chat page.
+38. Display all conversation.
+39. Make conversations table.
+40. Make a new websocket session when a user tries to send a message.
+41. Display all messages for a conversation.
+42. Make messages table.
+43. Add message input. 
+44. Add new messages to the message table.
+45. When chat button is clicked add a new conversation to the conversations table of the user and service provider. Also create new messages tables for the user and service provider.
+46. Add a 'send an offer' button to the service provider modal and the message input in the chatting view.
+47. Add special offer type to the messages and notifications tables.
+48. Make a 'send an offer' form.
+49. Validate 'send an offer form' on client and server.
+50. Upon an offer to a service provider send a notification and message to the service provider.
+51. Make an offer notification modal for both the notification menu and the chatting page.
+52. Make an offer reply modal which has accept/renegotiate/reject buttons and also a input to send the message to the offer sender.
+53. Make a offer response notification that goes to the offer sender.
+54. Make offer response notification modal. for the different responses.
+55. If the offer response is 'accept' then add a button to schedule a job or start the job.
+56. Add the functionality to auto close the notification or the message when the user has reply through one of them. Like if you use one then the other is automatically resolved
+57.  Add a schedule a job modal.
+58. Make jobs page.
+59. Make jobs table.
+60. Make job modal having different appearance on different stages of the job completion process.
+61. Add cancel job option to the schedules or started job on both user and service provider page. 
+62. Add time and date picker to job modal.
+63. Add functionality to trigger the scheduled job if the time has elapsed.
+64. Send notification of the job starting to the user and service provider which links back to the appropriate job page.
+65. Display a map of the best routes to the user to the service provider.
+66. Also display a open in goole maps button for the service provider.
+67. Add 'start sharing location' button to the service provider's end.
+68. When service provider click the 'start sharing location' button check if the application has the access to the service providers location, if not send a use location request.
+69. Add a session chat to this stage of the job completion stage.
+70. Create session messages table.
+71. Add a 'job completed' button to the service provider. 
+72. Transform current page to a job completed page.
+73. Send a notification to the user to give the user provider a review that links to the appropriate job completed page.
+74. Add give a review button to the job completed page.
+75. Make review form.
+76. Validate review form on client and server.
+77. Add review to the service provider's reviews table.
