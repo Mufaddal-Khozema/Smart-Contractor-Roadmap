@@ -3,8 +3,8 @@
 - User can add Display Picture & Phone number.
 - User can add services.
 - [User can view from contacts, who is registered on this application, and can view profiles.](#step-2-user-sees-thier-contacts)
-- [User’s locations should be taken. ](#step-3-users-locations-should-be-taken.)
-- Show the list of skillful users nearest (under 10km) to him
+- [User’s locations should be taken. ](#step-3-users-locations-should-be-taken)
+- [Show the list of skillful users nearest (under 10km) to him](#step-4-show-the-list-of-skillful-users-nearest-under-10km-to-him)
 - User can search the required service by categories, location or contacts.
 - User can send offer to a person any rate, another user can accept/reject the offer. They can chat with each other.
 - Upon hiring, both users will see their live locations on map, the best routes from source to destiny.
@@ -36,7 +36,8 @@ Currently the user table has only id, email and password. To accomodate the rich
     "skill": "Apprentice 1",
     "looking_to_worki_in": "Karachi",
     "password":"&^&^@*@($JBSJJBV@sjwb3*",
-    "profile_photo": "/uploads/namelast.png"
+    "profile_photo": "/uploads/namelast.png",
+    "location": "",
 }
 ```
 ## Step 1: Login via Facebook/Google
@@ -48,4 +49,8 @@ Currently the user table has only id, email and password. To accomodate the rich
 1. Gain access to users contact information
 2. Notify the user about contact that use the service. Give them an option to add them as friends.
 ## Step 3: User’s locations should be taken. 
+1. Prompt the user to provide the website with thier location.
+2. The location should be saved in the database under the Users table.
+3. Use the location to query location [features.](#step-4-show-the-list-of-skillful-users-nearest-under-10km-to-him)
+## Step 4: Show the list of skillful users nearest (under 10km) to him
 
