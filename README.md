@@ -5,7 +5,7 @@
 - [User can view from contacts, who is registered on this application, and can view profiles.](#step-2-user-sees-thier-contacts)
 - [User’s locations should be taken. ](#step-3-users-locations-should-be-taken)
 - [Show the list of skillful users nearest (under 10km) to him](#step-4-show-the-list-of-skillful-users-nearest-under-10km-to-him)
-- User can search the required service by categories, location or contacts.
+- [User can search the required service by categories, location or contacts.](#step-5-user-can-search-the-required-service-by-categories-location-or-contacts)
 - User can send offer to a person any rate, another user can accept/reject the offer. They can chat with each other.
 - Upon hiring, both users will see their live locations on map, the best routes from source to destiny.
 - User canwrite a review for a service and can rate by using five star ratings & end the contract
@@ -53,4 +53,11 @@ Currently the user table has only id, email and password. To accomodate the rich
 2. The location should be saved in the database under the Users table.
 3. Use the location to query location [features.](#step-4-show-the-list-of-skillful-users-nearest-under-10km-to-him)
 ## Step 4: Show the list of skillful users nearest (under 10km) to him
-
+1. If the user doesn't have location enable ask agian for thier permission for location accesss.
+2. Query the databse to filter the service providers nearest to the user.
+## Step 5: User can search the required service by categories, location or contacts.
+1. Search will have an addition button for filtering search results.
+2. Searching [location](#step-5-user-can-search-the-required-service-by-categories-location-or-contacts) will depend on the location enable. The search results will be ordered in proximity to the user
+3. Categories here is understood as the types of trade a service provider provides. The search result with those trades will be shown at the top.
+4. Contact here is understood as both the contacts on thier mobile phone and the friends they have added/service provider that they are have had any interaction with. The service providers fitting the aforementioned criterion will be shown in the search result first.
+## Step 6: 
