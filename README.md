@@ -57,7 +57,7 @@ Currently the user table has only id, email and password. To accomodate the rich
 2. Query the databse to filter the service providers nearest to the user.
 ## Step 5: User can search the required service by categories, location or contacts.
 1. Search will have an addition button for filtering search results.
-2. Searching [location](#step-5-user-can-search-the-required-service-by-categories-location-or-contacts) will depend on the location enable. The search results will be ordered in proximity to the user
+2. Searching [location](#step-4-show-the-list-of-skillful-users-nearest-under-10km-to-him) will depend on the location enable. The search results will be ordered in proximity to the user
 3. Categories here is understood as the types of trade a service provider provides. The search result with those trades will be shown at the top.
 4. Contact here is understood as both the contacts on thier mobile phone and the friends they have added/service provider that they are have had any interaction with. The service providers fitting the aforementioned criterion will be shown in the search result first.
 ## Step 6: 
