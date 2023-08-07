@@ -7,8 +7,8 @@
 - [Show the list of skillful users nearest (under 10km) to him](#step-4-show-the-list-of-skillful-users-nearest-under-10km-to-him)
 - [User can search the required service by categories, location or contacts.](#step-5-user-can-search-the-required-service-by-categories-location-or-contacts)
 - [User can send offer to a person any rate, another user can accept/reject the offer. They can chat with each other.](#step-6-user-can-send-offer-to-a-person-any-rate-another-user-can-acceptreject-the-offer-they-can-chat-with-each-other)
-- Upon hiring, both users will see their live locations on map, the best routes from source to destiny.
-- User canwrite a review for a service and can rate by using five star ratings & end the contract
+- [Upon hiring, both users will see their live locations on map, the best routes from source to destiny.](#step-7-upon-hiring-both-users-will-see-their-live-locations-on-map-the-best-routes-from-source-to-destiny)
+- [User canwrite a review for a service and can rate by using five star ratings & end the contract](#step-8-user-canwrite-a-review-for-a-service-and-can-rate-by-using-five-star-ratings-end-the-contract)
 - Admin can login via specific credentials.
 - Admin can view/block/delete the users.
 - Admin can add categories.
@@ -65,4 +65,10 @@ Currently the user table has only id, email and password. To accomodate the rich
 2. Service providers: They are users that have opt in to be service providers. They can have a description and display thier various services. They will also be accompanied by [rating].
 3. User chatting: User has the option to contact a service provider if they so choose. To enable this chatting there will be a chats view where a person will see all the users that they have engaged in chats with. 
 4. Offer sending: An offer is proposition that a user can approach in two ways. A Service provider will have an option on thier profile 'send an offer'. The second way is in chatting where the same option will be available and can be utilised by the user anytime. The offer will look something like, where an they will be given an offer page where the user will provide a **'title'** (to describe what they want), **'service/s'** (This will be the type of service or services the user needs from the service provider), **'explanation'** (Here the user can go more into detail in what they need from the services provider), **'expected timeline'** (The user can provide the time they expect the project) and **'price'** (The price at which they wish to comission the project).
-5. A Service provider after recieving an offer has the option to accept/renegotiate/reject the offer all will be (optionally) accomanied by a message by the Service provider.
+5. Offer response: A Service provider after recieving an offer has the option to accept/renegotiate/reject the offer all will be (optionally) accomanied by a message by the Service provider. Only the accept option will trigger a job.
+6. Scheduling a job: After the job has been decided. The user can go to the my jobs page to schedule a job or request the job right now. [job](#step-7-upon-hiring-both-users-will-see-their-live-locations-on-map-the-best-routes-from-source-to-destiny).
+## Step 7: Upon hiring, both users will see their live locations on map, the best routes from source to destiny.
+1. Jobs page: a user and Service Provider will have a my jobs page that will include all the jobs they are currently engaged in and all all thier past jobs.
+2. Job event: when a job is triggered there will be a waiting menu for the Service Provider to opt in and an option to send a message.  After the service provider opts in, both will see each others adress and the best routes for each other to meet.
+## Step 8: User canwrite a review for a service and can rate by using five star ratings & end the contract.
+1. After a job event is successfully over and the user will have a option on the [job page](#step-7-upon-hiring-both-users-will-see-their-live-locations-on-map-the-best-routes-from-source-to-destiny) to write them a review.
